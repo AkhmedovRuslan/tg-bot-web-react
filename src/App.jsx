@@ -1,11 +1,11 @@
 import './App.css'
 
-const tg = window.Telegram.WebApp;
 
 export default function App() {
   // useEffect(() => {
   //   tg.ready();
   // }, [])
+  const tg = window.Telegram.WebApp;
 
   const onClose = () => {
     tg.Close();
