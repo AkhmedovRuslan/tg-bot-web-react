@@ -1,20 +1,18 @@
 import './App.css'
+import {useTelegram} from "./hooks/useTelegram.js";
 
 
 export default function App() {
+  const {onToggleButton} = useTelegram();
+  
   // useEffect(() => {
   //   tg.ready();
   // }, [])
-  const tg = window.Telegram.WebApp;
-
-  const onClose = () => {
-    tg.Close();
-  }
 
   return (
     <div className='App'>
       Ready
-      <button onClick={onClose}>Close</button>
+      <button onClick={onToggleButton}>Toggle</button>
     </div>
   )
 }
