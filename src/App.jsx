@@ -11,7 +11,7 @@ export default function App() {
 
   return (
     <div className='App'>
-      Ready
+      Hello people
       <button onClick={onToggleButton}>Toggle</button>
     </div>
   )
