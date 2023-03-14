@@ -8,11 +8,11 @@ import Form from './components/Form/Form';
 
 
 export default function App() {
-  const {tg} = useTelegram();
+//   const {tg} = useTelegram();
   
-  useEffect(() => {
-    tg.ready();
-  }, [])
+//   useEffect(() => {
+//     tg.ready();
+//   }, [])
 
   return (
     <div className='App'>
